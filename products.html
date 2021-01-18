@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!--Required Meta Tag-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+            * {
+        box-sizing: border-box;
+            }
+
+           .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+            }
+
+            /* Clearfix (clear floats) */
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+
+            .center {
+            text-align: center;
+            border: 3px solid green;
+
+            }
+
+            body {
+                font-family: Arial;
+                margin: 0;
+
+            }
+
+            .header {
+                padding: 10px;
+                text-align: center;
+                background: #1abc9c;
+                color: white;
+                font-size: 20px;
+
+            } 
+            
+
+            footer {
+                text-align: center;
+                padding: 3px;
+                background-color: #1abc9c;
+                color: white;
+            }
+
+            .button {
+                
+                background-color: #1abc9c; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+
+            }
+
+            .button2:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+
+            .navbar {
+            overflow: hidden;
+            background-color: #1abc9c;
+            }
+
+            .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+            .dropdown {
+            float: left;
+            overflow: hidden;
+            }
+
+            .dropdown .dropbtn {
+            font-size: 30px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 20px 24px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: black;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        
+    </style>
+    <title>Online Grocery Store</title>
+
+    </head>
+    <body>
+    <div class="header">
+
+        <br>
+    <div class="navbar">
+            <a href="#home">Home</a>
+            <h1>Online Grocery Store</h1>
+        <div class="dropdown">
+             <button class="dropbtn">Cart 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+            <a href="#">Product 1</a>
+            <a href="#">Product 2</a>
+            <a href="#">Product 3</a>
+        </div>
+    </div> 
+    </div>
+        
+        <br>
+
+    </div>
+
+        <div class="container">
+            
+            <!-- Content here -->
+                <br>
+                <p><strong>
+                    These are the products that we
+                    have available currently. 
+                <strong></p>
+
+                <br>
+                <h3>Products</h3>
+                <br>
+                <ol>
+                    <li>Products Available Below</li>
+                    <li><a href="payment.html" id="pay">Payment</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    
+                </ol>
+
+              
+              
+        </div>
+
+          <div class="row">
+                    <div class="column">
+                        <img src="images/vegetables.jpg" alt="vegetables" width="250" height="166"><br>
+                        <select name="veggies" id="veggies">
+                        <option value="none">None</option>
+                        <option value="carrot">Carrot</option>
+                        <option value="tomato">Tomato</option>
+                        <option value="potato">Potato</option>
+                        <option value="pepper">pepper</option>
+                        </select>
+                        <input type="number" id="quantity1" name="quantity1" min="1" max="5">
+                    </div>
+                    <div class="column">
+                        <img src="images/meats.jpg" alt="meats" width="250" height="166"><br>
+                        <select name="meats" id="meats">
+                        <option value="none">None</option>
+                        <option value="chicken">Chicken</option>
+                        <option value="beef">Beef</option>
+                        <option value="pork">Pork</option>
+                        <option value="fish">fish</option>
+                        </select>
+                        <input type="number" id="quantity2" name="quantity2" min="1" max="5">
+                    </div>
+                    <div class="column">
+                        <img src="images/breads.jpg" alt="breads" width="250" height="166"><br>
+                        <select name="breads" id="breads">
+                        <option value="none">None</option>
+                        <option value="whiteBread">White Bread</option>
+                        <option value="WheatBread">Wheat Bread</option>
+                        <option value="baguette">Baguette</option>
+                        <option value="cake">Cake</option>
+                        </select>
+                        <input type="number" id="quantity3" name="quantity3" min="1" max="5">
+                    </div>
+                    <div class="column">
+                        <img src="images/sweets.jpg" alt="sweets" width="250" height="166"><br>
+                        <select name="sweets" id="sweets">
+                        <option value="none">None</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="candy">Candy</option>
+                        <option value="cookies">Cookies</option>
+                        <option value="IceCream">Ice Cream</option>
+                        </select>
+                        <input type="number" id="quantity4" name="quantity4" min="1" max="5">
+                    </div>
+                    <div class="column">
+                        <img src="images/softDrinks.jpg" alt="softDrinks" width="250" height="166"><br>
+                        <select name="drinks" id="drinks">
+                        <option value="none">None</option>
+                        <option value="coke">Coke</option>
+                        <option value="pepsi">Pepsi</option>
+                        <option value="7up">7-Up</option>
+                        <option value="iceTea">Ice Tea</option>
+                        </select>
+                        <input type="number" id="quantity5" name="quantity5" min="1" max="5">
+                    </div>
+                    <div class="column">
+                        <img src="images/eggs.jpg" alt="eggs" width="250" height="166"><br>
+                        <select name="eggs" id="eggs">
+                        <option value="none">None</option>
+                        <option value="eggs">Eggs</option>
+                        <option value="milk">Milk</option>
+                        <option value="cheese">Cheese</option>
+                        </select>
+                        <input type="number" id="quantity6" name="quantity6" min="1" max="5">
+                    </div>
+
+                </div>
+                <br>
+                <button type="submit" class="button button2" id="btn1" >Submit</button>
+
+                <br><br><br>
+                <br>
+        <footer>
+
+            <p>Author: Eddy Alvarado<br>
+            <a href="mailto:hege@example.com">hege@example.com</a></p>
+
+        </footer>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
